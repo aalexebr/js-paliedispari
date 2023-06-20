@@ -1,7 +1,12 @@
+
 const userChoice = prompt('even or odd')
+console.log('user choise ', userChoice)
+while (userChoice !== 'odd' || userChoice !== 'even'){
+    userChoice = prompt('even or odd')
+}
 const userNumber =parseInt(prompt('number between 1 and 5'))
 console.log('user number', userNumber) 
-console.log('user choise ', userChoice)
+
 //  computer function number
 let min = 1
 let max = 5
