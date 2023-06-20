@@ -1,6 +1,7 @@
 const userChoice = prompt('even or odd')
 const userNumber =parseInt(prompt('number between 1 and 5'))
 console.log('user number', userNumber) 
+console.log('user choise ', userChoice)
 //  computer function number
 let min = 1
 let max = 5
@@ -28,8 +29,20 @@ function even (userAndPcSumResult){
 }
 let evenValidation = even(userAndPcSumResult)
 if (evenValidation == true){
-    console.log('even')
+    console.log('then number is even')
+    if(userChoice == 'even'){
+        console.log('user chose even and won')
+    }
+    else{
+        console.log('user chose even and lost')
+    }
 }
 else if (evenValidation == false){
-    console.log('false')
+    console.log('the number is odd')
+    if(userChoice == 'odd'){
+        console.log('user chose odd and won')
+    }
+    else{
+        console.log('user chose odd and lost')
+    }
 }
